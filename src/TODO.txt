@@ -1,0 +1,18 @@
+TODO: 
+
+
+- use Axios for fetching
+
+- create better Design & CSS: Try Material UI
+- create better loader
+- use Transitions
+
+
+- create Hooks Reducer version
+
+- create regular Class Components version
+  - create version with Redux? (maybe not necessary)
+
+- create Modal details view
+
+- create feature on Modal to Favorite a movie - store in json file but create APIs for reading/writing/etc
