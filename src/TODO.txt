@@ -1,8 +1,5 @@
 TODO: 
 
-
-- use Axios for fetching
-
 - create better Design & CSS: Try Material UI
 - create better loader
 - use Transitions

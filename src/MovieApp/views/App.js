@@ -3,6 +3,7 @@ import '../css/App.css';
 import Header from '../components/Header';
 import Search from '../components/Search';
 import Movie from '../components/Movie';
+import axios from 'axios';
 
 const MOVIE_API_KEY = "46d3128b";
 const MOVIE_DEFAULT_SEARCH = "300";
@@ -24,13 +25,14 @@ const App = () => {
   // the array at the end of it is for what do the component updates (componentDidUpdate)
   // In that array we just pass in a value that tells React to skip applying an effect if the value passed in hasn’t changed.
   useEffect(() => {
-    fetch(MOVIE_DEFAULT_API_SEARCH)
-      .then(response => response.json())
+    // via AXIOS - skips this step from fetch: .then(response => response.json())
+    axios.get(MOVIE_DEFAULT_API_SEARCH)
       .then(jsonResponse => {
-        setMovies(jsonResponse.Search);
+        setMovies(jsonResponse.data.Search);
         setLoading(false);
       });
   }, []);
+
   /*
     // for class components
     componentDidUpdate(prevProps, prevState) {
