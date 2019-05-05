@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useContext, useReducer } from "react";
 import './css/App.css';
 import Header from './components/Header';
 import Main from './components/Main';
+import AppContext from './AppContext';
+import appReducer from './reducers/reducer';
 
 const App = () => {
-
-  const [selectedNavItem, setSelectedNavItem] = useState(null)
+  const initialState = useContext(AppContext);
+  const [state, dispatch] = useReducer(appReducer, initialState);
 
   useEffect(() => {
     // nothing yet
@@ -13,8 +15,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <AppContext.Provider value={{state, dispatch}}>
+        <Header />
+        <Main/>
+      </AppContext.Provider>
     </div>
   );
 }

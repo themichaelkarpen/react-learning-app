@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useContext, useEffect} from 'react';
+import AppContext from '../AppContext';
 //import { withRouter } from 'react-router-dom';
 
 const Home = (props) => { // note: props is needed for history push
 
+  const {state, dispatch} = useContext(AppContext)
+
   useEffect(() => {
-    // redirect on component load - will never be able to access home
-    // props.history.push('/about')
+    dispatch({
+      type: "SET_SELECTED_PAGE",
+      payload: 'home'
+    })
   }, []);
 
   const sampleRedirect = () => {
@@ -14,6 +19,7 @@ const Home = (props) => { // note: props is needed for history push
   return (
     <div>
       <h1>Home Page</h1>
+      Selected Page (in View): {state.selectedPage}<br /><br />
       <button onClick={()=>{
           sampleRedirect()}}> go home redirect via history push
       </button>
