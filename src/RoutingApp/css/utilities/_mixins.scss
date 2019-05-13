@@ -1,0 +1,19 @@
+// FLEXBOX ------------------------------------
+
+// row / columns
+@mixin flexible-row() {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@mixin flexible-column() {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+// TRANSITIONS ---------------------------
+
+@mixin transition() {
+    transition: all 0.3s ease 0s;
+}

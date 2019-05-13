@@ -18,7 +18,7 @@ const Home = (props) => { // note: props is needed for history push
   }
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1><i className="fa fa-home"></i> Home Page</h1>
       Selected Page (in View): {state.selectedPage}<br /><br />
       <button onClick={()=>{
           sampleRedirect()}}> go home redirect via history push

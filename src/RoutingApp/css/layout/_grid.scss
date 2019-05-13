@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// Grid Elements
+// -----------------------------------------------------------------------------
+
+.full-width {width: 100%;}
+.full-height {height: 100%;}
+
+.float-right, .xyz-right-clean {float: right !important;}
+.float-left, .xyz-left-clean {float: left !important;}
+.clear, .xyz-clear {clear: both;}
+
+.flex-row {
+    @include flexible-row();
+
+    &.space-between {
+        justify-content: space-between;
+    }
+}
+.flex-column {
+    @include flexible-column();
+}
