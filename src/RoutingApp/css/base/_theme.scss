@@ -1,3 +1,7 @@
 body {
     background-color: $light-bg;
 }
+body.dark-mode {
+    background-color: $dark-bg;
+    color: var(--white);
+}

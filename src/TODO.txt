@@ -1,8 +1,5 @@
 TODO: 
 
-- Light / Dark Mode
-- Sass
-
 - APIs for Books, Recipes or Jokes
 - Modal to Open Details and also Save to File (as Favorite, etc)
 - create feature on Modal to Favorite a movie - store in json file but create APIs for reading/writing/etc
