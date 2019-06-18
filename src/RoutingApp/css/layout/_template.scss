@@ -1,0 +1,25 @@
+#root, .App {
+    min-height: 100vh;
+}
+#header, #footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--header-footer-bg);
+    color: var(--white);
+}
+#content {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: minmax(2.5rem,1fr) minmax(auto,60ch) minmax(2.5rem, 1fr );
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    > * { grid-column: 2;}
+}
+
+.App {
+    @include flexible-column();
+    justify-content: flex-start;
+    > *:last-child { margin-top: auto;}
+}
