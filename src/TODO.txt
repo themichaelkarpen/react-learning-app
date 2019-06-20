@@ -1,5 +1,14 @@
 TODO: 
 
+Infrastructure:
+- Finish theme
+- Modals
+- Read/Write/Delete data
+- Example how to use code on page and target and then put into a code block for tutorial
+- Think about nav like projects/samples: books, recipes, jokes, etc
+
+- Figure out Props / Prev Props using Hooks
+
 - APIs for Books, Recipes or Jokes
 - Modal to Open Details and also Save to File (as Favorite, etc)
 - create feature on Modal to Favorite a movie - store in json file but create APIs for reading/writing/etc
@@ -12,3 +21,9 @@ TODO:
 
 - create global toastr alert for errors, success, etc - using Context, that any component or view can use
 https://fkhadra.github.io/react-toastify/
+
+
+
+Bonus:
+- Good error handling
+- Upload files (images) for media display
