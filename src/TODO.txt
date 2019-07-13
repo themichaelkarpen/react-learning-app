@@ -1,4 +1,10 @@
-TODO: 
+TODO: MOVING THIS CODE TO A NEW APP. Will Delete this REPO once moved over
+
+
+Set up API Services like this:
+└── services
+    └── UserService
+        └── UserService.js
 
 Infrastructure:
 - Finish theme
@@ -21,6 +27,11 @@ Infrastructure:
 
 - create global toastr alert for errors, success, etc - using Context, that any component or view can use
 https://fkhadra.github.io/react-toastify/
+
+
+Free API for Sample Users:
+https://jsonplaceholder.typicode.com/users/
+https://jsonplaceholder.typicode.com/users/1/
 
 
 
