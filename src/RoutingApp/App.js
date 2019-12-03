@@ -19,6 +19,7 @@ const App = () => {
     // nothing yet
   }, []);
 
+  
   return (
     <div className="App">
       <AppContext.Provider value={{state, dispatch}}>
